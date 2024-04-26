@@ -1,6 +1,9 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "colors.scss";
 
+$mb-md: 400px;
+$mb-lg: 700px;
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -37,15 +40,24 @@ $spacing-1-auto: 60px auto;
 
 .brand-logo {
   width: 100%;
-  max-width: 300px;
+  max-width: 150px;
+  @media (min-width: $mb-md) {
+    max-width: 200px;
+  }
+  @media (min-width: $mb-lg) {
+    max-width: 300px;
+  }
 }
 
 .cta {
   background-color: $light-blue;
   width: 100%;
-  padding: 5rem;
+  padding: 3rem 2rem;
   color: $dark-blue;
   border-radius: 1rem;
+  @media (min-width: $mb-lg) {
+    padding: 5rem;
+  }
 }
 
 .cta__inner {
@@ -58,11 +70,18 @@ $spacing-1-auto: 60px auto;
 
 .cta__header {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin: 0;
   text-transform: uppercase;
-  max-width: 80%;
+  max-width: 100%;
   font-weight: 700;
+  @media (min-width: $mb-md) {
+    font-size: 3rem;
+  }
+  @media (min-width: $mb-lg) {
+    max-width: 80%;
+    font-size: 3.5rem;
+  }
 }
 
 .cta__list {
@@ -71,7 +90,31 @@ $spacing-1-auto: 60px auto;
   width: 100%;
   list-style-type: none;
   padding: 0;
-  margin: 3.5rem 0;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+  input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    &:checked + .cta__list-button {
+      background-color: $white;
+      color: $dark-blue;
+    }
+  }
+  @media (min-width: $mb-lg) {
+    margin: 3.5rem 0;
+  }
+}
+
+.cta__list-item {
+  width: 50%;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+  @media (min-width: $mb-lg) {
+    width: 25%;
+    padding: 0 1rem;
+  }
 }
 
 .cta__list-button {
@@ -79,16 +122,21 @@ $spacing-1-auto: 60px auto;
   background-color: $dark-blue;
   border: 4px solid $dark-blue;
   color: $white;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
-  padding: 1rem 5rem;
+  padding: 1rem 0;
   width: 100%;
   border-radius: 5rem;
   text-decoration: none;
   &:hover {
     cursor: pointer;
-    background-color: $white;
-    color: $dark-blue;
+    opacity: 0.8;
+  }
+  @media (min-width: $mb-md) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: $mb-lg) {
+    font-size: 3rem;
   }
 }
 
@@ -96,10 +144,13 @@ $spacing-1-auto: 60px auto;
   background-color: $red;
   border-radius: 1rem;
   border: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: $white;
   padding: 1.5rem 5rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
+  @media (min-width: $mb-lg) {
+    font-size: 3rem;
+  }
 }
