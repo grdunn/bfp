@@ -8,7 +8,7 @@ function Cta() {
   // Function to handle storing the radio input value
   // into the react state. This will allow us to create the dynamic link
   // when the user clicks the donate button.
-  const handleRadio = (e: any) => {
+  const handleRadio = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAmount(e.target.value);
   };
 

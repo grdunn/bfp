@@ -22,15 +22,37 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  background-color: $ivory;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.wrapper--bg-white {
+  background-color: $white;
 }
 
 $spacing-1-auto: 60px auto;
 
-.container {
+.container__padded {
+  padding: 4rem 0rem;
+  @media (min-width: $mb-lg) {
+    padding: 8rem 0rem;
+  }
+}
+
+.container__inner {
   max-width: 840px;
-  margin: $spacing-1-auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
 }
 
 .container__center {
@@ -48,5 +70,15 @@ $spacing-1-auto: 60px auto;
   }
   @media (min-width: $mb-lg) {
     max-width: 300px;
+  }
+}
+
+.footer {
+  span {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  a {
+    color: #000000;
   }
 }
