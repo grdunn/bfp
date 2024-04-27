@@ -1,5 +1,7 @@
 # BFP Skills Assessment
 
+![GH Pages](https://github.com/github/docs/actions/workflows/vite.yml/badge.svg)
+
 #### Running locally
 
 In order to run this project locally, run the following command:
