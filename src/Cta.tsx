@@ -1,10 +1,13 @@
 import { useState } from "react";
-import "./App.css";
 
 function Cta() {
+  // Set the default amount to $20.
   const [amount, setAmount] = useState("20");
   const url = `https://secure.actblue.com/donate/web-bfp-march2-2024?refcode=web_test&amount=`;
 
+  // Function to handle storing the radio input value
+  // into the react state. This will allow us to create the dynamic link
+  // when the user clicks the donate button.
   const handleRadio = (e: any) => {
     setAmount(e.target.value);
   };
