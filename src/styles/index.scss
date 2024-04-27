@@ -37,8 +37,8 @@ p {
   text-align: center;
 }
 
-.wrapper--bg-white {
-  background-color: $white;
+.container--top {
+  padding-top: 8rem;
 }
 
 .container__padded {
@@ -66,9 +66,6 @@ p {
   max-width: 150px;
   @media (min-width: $mb-md) {
     max-width: 200px;
-  }
-  @media (min-width: $mb-lg) {
-    max-width: 300px;
   }
 }
 
