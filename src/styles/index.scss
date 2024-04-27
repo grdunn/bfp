@@ -2,6 +2,7 @@
 
 $mb-md: 400px;
 $mb-lg: 700px;
+$spacing-1-auto: 60px auto;
 
 @import "colors.scss";
 @import "cta.scss";
@@ -39,8 +40,6 @@ p {
 .wrapper--bg-white {
   background-color: $white;
 }
-
-$spacing-1-auto: 60px auto;
 
 .container__padded {
   padding: 4rem 0rem;
