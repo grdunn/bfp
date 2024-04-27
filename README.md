@@ -1,5 +1,7 @@
 # BFP Skills Assessment
 
+[![Deploy To Github Pages](https://github.com/grdunn/bfp/actions/workflows/vite.yml/badge.svg)](https://github.com/grdunn/bfp/actions/workflows/vite.yml)
+
 #### Running locally
 
 In order to run this project locally, run the following command:
